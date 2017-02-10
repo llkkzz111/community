@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choudao.equity.ProfileUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.choudao.equity.view.TopView
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_group_name_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_thirty_dp"
+            android:background="@drawable/link_add_edit_text_bg"
+            android:hint="请输入群名称"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="1"
+            android:minHeight="@dimen/targets_sixty_dp"
+            android:padding="@dimen/padding_ten_dp"
+            android:textSize="@dimen/text_fifteen_sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_trans"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/radius_progress_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Large.Inverse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_fifteen_dp"
+                android:layout_marginLeft="@dimen/margin_twenty_dp"
+                android:layout_marginRight="@dimen/margin_fifteen_dp"
+                android:layout_marginTop="@dimen/margin_fifteen_dp" />
+
+            <TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_twenty_dp"
+                android:textColor="@color/whitesmoke"
+                android:textSize="@dimen/text_fourteen_sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

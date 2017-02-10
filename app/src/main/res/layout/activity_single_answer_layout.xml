@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.choudao.equity.view.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.choudao.equity.view.TopView
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/viewsub_common_view_layout"/>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/community_screen_uncheck_color"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="50dp"
+                android:paddingLeft="@dimen/padding_thirteen_dp"
+                android:paddingRight="@dimen/padding_thirteen_dp"
+                android:textSize="@dimen/text_sixteen_sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_thirteen_dp"
+                android:layout_marginRight="@dimen/margin_thirteen_dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="@dimen/targets_thirty_seven_dp"
+                    android:layout_height="@dimen/targets_thirty_seven_dp"
+                    android:layout_marginBottom="@dimen/margin_eleven_dp"
+                    android:layout_marginTop="@dimen/margin_eleven_dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_fifteen_dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="#6a7f77"
+                        android:textSize="@dimen/text_fourteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:maxLines="1"
+                        android:textColor="#999393"
+                        android:textSize="@dimen/text_twelve_sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_five_dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:minWidth="@dimen/targets_sixty_dp">
+
+                    <TextView
+                        android:id="@+id/tv_support_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_ten_dp"
+                        android:drawableLeft="@drawable/icon_like_default"
+                        android:drawablePadding="@dimen/padding_ten_dp"
+                        android:gravity="center"
+                        android:minWidth="@dimen/targets_fifty_dp"
+                        android:textColor="#6a7f77"
+                        android:textSize="@dimen/text_fifteen_sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+
+            <com.choudao.equity.view.CDWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_eleven_dp"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_comments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/padding_three_dp"
+                    android:drawableTop="@drawable/icon_evaluate_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_three_dp"
+                    android:textColor="#a2a2a2"
+                    android:textSize="@dimen/text_twelve_sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.choudao.equity.view.bottomsheet.BottomSheetLayout>

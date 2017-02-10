@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitesmoke">
+
+    <LinearLayout
+        android:id="@+id/ll_error_tip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/online_error_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/exception_logo" />
+
+        <TextView
+            android:id="@+id/tv_exception_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_fifteen_dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/network_unknown_error_tip"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_seventeen_sp" />
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_fifteen_dp"
+            android:background="@drawable/radius_button_refush_text_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_five_dp"
+            android:paddingTop="@dimen/padding_five_dp"
+            android:text="@string/text_refresh"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/text_eighteen_sp" />
+    </LinearLayout>
+
+</RelativeLayout>

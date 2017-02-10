@@ -1,0 +1,108 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottomsheet_default_sheet_width">0dp</dimen>
+
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">15dp</dimen>
+    <dimen name="targets_forty_dp">40dp</dimen>
+    <dimen name="targets_forty_five_dp">45dp</dimen>
+    <dimen name="targets_fifty_dp">50dp</dimen>
+    <dimen name="targets_fifty_three_dp">53dp</dimen>
+    <dimen name="targets_sixty_five_dp">65dp</dimen>
+    <dimen name="targets_eighty_five_dp">85dp</dimen>
+    <dimen name="targets_ninety_five_dp">95dp</dimen>
+    <dimen name="targets_sixty_dp">60dp</dimen>
+    <dimen name="targets_thirty_seven_dp">37dp</dimen>
+
+    <!-- margin attribute -->
+    <dimen name="margin_one_px">1px</dimen>
+    <dimen name="margin_one_dp">1dp</dimen>
+    <dimen name="margin_two_dp">2dp</dimen>
+    <dimen name="margin_three_dp">3dp</dimen>
+    <dimen name="margin_four_dp">3dp</dimen>
+    <dimen name="margin_five_dp">5dp</dimen>
+    <dimen name="margin_six_dp">6dp</dimen>
+    <dimen name="margin_seven_dp">7dp</dimen>
+    <dimen name="margin_eight_dp">8dp</dimen>
+    <dimen name="margin_ten_dp">10dp</dimen>
+    <dimen name="margin_eleven_dp">11dp</dimen>
+    <dimen name="margin_twelve_dp">12dp</dimen>
+    <dimen name="margin_thirteen_dp">13dp</dimen>
+    <dimen name="margin_fifteen_dp">15dp</dimen>
+    <dimen name="margin_sixteen_dp">16dp</dimen>
+    <dimen name="margin_twenty_dp">20dp</dimen>
+    <dimen name="margin_twenty_five_dp">25dp</dimen>
+    <dimen name="margin_twenty_eight_dp">28dp</dimen>
+    <dimen name="margin_thirty_dp">30dp</dimen>
+    <dimen name="margin_thirty_five_dp">35dp</dimen>
+    <dimen name="margin_forty_dp">40dp</dimen>
+    <dimen name="margin_forty_two_dp">42dp</dimen>
+    <dimen name="margin_fifty_dp">50dp</dimen>
+    <dimen name="margin_seventy_dp">70dp</dimen>
+
+    <!-- padding attribute -->
+    <dimen name="padding_one_px">1px</dimen>
+    <dimen name="padding_one_dp">1dp</dimen>
+    <dimen name="padding_three_dp">3dp</dimen>
+    <dimen name="padding_four_dp">3dp</dimen>
+    <dimen name="padding_five_dp">5dp</dimen>
+    <dimen name="padding_six_dp">6dp</dimen>
+    <dimen name="padding_seven_dp">7dp</dimen>
+    <dimen name="padding_eight_dp">8dp</dimen>
+    <dimen name="padding_ten_dp">10dp</dimen>
+    <dimen name="padding_eleven_dp">11dp</dimen>
+    <dimen name="padding_twelve_dp">12dp</dimen>
+    <dimen name="padding_thirteen_dp">13dp</dimen>
+    <dimen name="padding_fifteen_dp">15dp</dimen>
+    <dimen name="padding_sixteen_dp">16dp</dimen>
+    <dimen name="padding_seventeen_dp">17dp</dimen>
+    <dimen name="padding_twenty_dp">20dp</dimen>
+    <dimen name="padding_twenty_five_dp">25dp</dimen>
+    <dimen name="padding_twenty_eight_dp">28dp</dimen>
+    <dimen name="padding_thirty_dp">30dp</dimen>
+    <dimen name="padding_thirty_five_dp">35dp</dimen>
+    <dimen name="padding_forty_dp">40dp</dimen>
+    <dimen name="padding_seventy_dp">70dp</dimen>
+    <dimen name="padding_eighty_dp">80dp</dimen>
+
+
+    <!-- Text Size attribute -->
+    <dimen name="text_ten_sp">10sp</dimen>
+    <dimen name="text_eleven_sp">11sp</dimen>
+    <dimen name="text_twelve_sp">12sp</dimen>
+    <dimen name="text_twelve_dp">12dp</dimen>
+    <dimen name="text_thirteen_sp">13sp</dimen>
+    <dimen name="text_fourteen_sp">14sp</dimen>
+    <dimen name="text_fifteen_sp">15sp</dimen>
+    <dimen name="text_sixteen_sp">16sp</dimen>
+    <dimen name="text_seventeen_sp">17sp</dimen>
+    <dimen name="text_eighteen_sp">18sp</dimen>
+    <dimen name="text_twenty_sp">20sp</dimen>
+    <dimen name="text_twenty_four_sp">24sp</dimen>
+    <dimen name="text_forty_eight_sp">48sp</dimen>
+
+
+    <dimen name="guide_btn_width">160dp</dimen>
+    <dimen name="guide_btn_height">44dp</dimen>
+    <dimen name="card_view_margin">0dp</dimen>
+    <dimen name="dialog_bg_radius">8dp</dimen>
+
+    <!-- 相册相关 -->
+    <dimen name="albumitem_height">100dp</dimen>
+    <dimen name="albumitem_content_height">80dp</dimen>
+    <dimen name="albumitem_image_height">20dp</dimen>
+    <!-- CheckBox相关 -->
+    <dimen name="checkbox_height">25dp</dimen>
+    <dimen name="layout_title_content_heigh">30dp</dimen>
+    <dimen name="layout_title_mini_textsize">16sp</dimen>
+    <!-- 图片选择界面Item相关 -->
+    <dimen name="sticky_item_horizontalSpacing">2dp</dimen>
+    <dimen name="sticky_item_verticalSpacing">2dp</dimen>
+    <dimen name="collection_photo_toolbar_height">45dp</dimen>
+</resources>

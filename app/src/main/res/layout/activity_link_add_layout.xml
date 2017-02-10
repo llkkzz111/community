@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_link_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/margin_fifteen_dp"
+        android:layout_marginRight="@dimen/margin_fifteen_dp"
+        android:layout_marginTop="@dimen/margin_fifteen_dp"
+        android:background="@drawable/link_add_edit_text_bg"
+        android:hint="@string/text_hint_input_link_title"
+        android:maxLines="1"
+        android:padding="@dimen/padding_five_dp"
+        android:textSize="@dimen/text_fifteen_sp" />
+
+    <EditText
+        android:id="@+id/et_link_path"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/margin_fifteen_dp"
+        android:layout_marginRight="@dimen/margin_fifteen_dp"
+        android:layout_marginTop="@dimen/margin_five_dp"
+        android:background="@drawable/link_add_edit_text_bg"
+        android:hint="@string/text_hint_input_link_path"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:padding="@dimen/padding_five_dp"
+        android:textSize="@dimen/text_fifteen_sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_link_add"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:text="@string/text_add" />
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:text="@string/text_cancel" />
+    </LinearLayout>
+</LinearLayout>

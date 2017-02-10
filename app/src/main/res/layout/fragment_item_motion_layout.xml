@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_view_list_selector_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_eleven_dp">
+
+    <ImageView
+        android:id="@+id/iv_motion_item_head"
+        android:layout_width="33dp"
+        android:layout_height="33dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_motion_item_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="#5a6e6d"
+                android:textSize="@dimen/text_fourteen_sp" />
+
+            <TextView
+                android:id="@+id/tv_motion_item_user_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_five_dp"
+                android:layout_marginRight="@dimen/margin_ten_dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="#a2a2a2"
+                android:textSize="@dimen/text_twelve_sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_motion_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:paddingTop="3dp"
+            android:textColor="#181818"
+            android:textSize="@dimen/text_fifteen_sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_another"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_vote_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_unchecked_bg"
+                android:includeFontPadding="false"
+                android:paddingLeft="@dimen/padding_six_dp"
+                android:paddingRight="@dimen/padding_six_dp"
+                android:text="21"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifteen_sp" />
+
+            <com.choudao.equity.view.NoInnerPaddingTextView
+                android:id="@+id/tv_another_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_defult_color"
+                android:textSize="@dimen/text_fourteen_sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_motion_item_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="right"
+            android:maxLines="1"
+            android:textColor="#a2a2a2"
+            android:textSize="@dimen/text_twelve_sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

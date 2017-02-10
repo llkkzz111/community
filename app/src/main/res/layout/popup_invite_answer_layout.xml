@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_popup_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/targets_sixty_dp"
+                android:text="@string/text_invited_answer"
+                android:textColor="#a2a2a2"
+                android:textSize="@dimen/text_fourteen_sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tv_invite_inside"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/targets_sixty_dp"
+                android:background="@drawable/list_view_list_selector_bg"
+                android:gravity="center"
+                android:text="@string/text_station_invited"
+                android:textColor="#606060"
+                android:textSize="@dimen/text_seventeen_sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_invite_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/targets_sixty_dp"
+                android:background="@drawable/list_view_list_selector_bg"
+                android:gravity="center"
+                android:text="@string/text_invited_wechat_friends"
+                android:textColor="#606060"
+                android:textSize="@dimen/text_seventeen_sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tv_invite_copy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/targets_sixty_dp"
+                android:background="@drawable/list_view_list_selector_bg"
+                android:gravity="center"
+                android:text="@string/text_invited_copy_path"
+                android:textColor="#606060"
+                android:textSize="@dimen/text_seventeen_sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="@color/mine_line_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_invite_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/targets_sixty_dp"
+                android:background="@drawable/list_view_list_selector_bg"
+                android:gravity="center"
+                android:text="@string/text_cancle"
+                android:textColor="#606060"
+                android:textSize="@dimen/text_seventeen_sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

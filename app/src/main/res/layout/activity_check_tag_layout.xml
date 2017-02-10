@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.choudao.equity.view.LinearLineWrapLayout
+        android:id="@+id/fgl_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_three_dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+
+    <include layout="@layout/viewsub_common_view_layout" />
+
+    <ListView
+        android:id="@+id/lv_tags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@color/list_device_color"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/list_view_list_selector_bg" />
+</LinearLayout>

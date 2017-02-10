@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/targets_fifty_dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_activity_message_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/targets_fifty_dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding_thirteen_dp"
+            android:paddingRight="@dimen/padding_thirteen_dp"
+            android:src="@drawable/icon_back_bg"/>
+
+        <View
+            android:layout_width="@dimen/targets_fifty_dp"
+            android:layout_height="@dimen/targets_fifty_dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_activity_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_activity_message_count"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_seventeen_sp"/>
+
+            <TextView
+                android:id="@+id/tv_activity_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:lines="1"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_seventeen_sp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_activity_message_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/targets_fifty_dp"
+            android:paddingLeft="@dimen/padding_thirteen_dp"
+            android:paddingRight="@dimen/padding_thirteen_dp"
+            android:src="@drawable/icon_notice_close"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_activity_message_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/targets_fifty_dp"
+            android:paddingLeft="@dimen/padding_thirteen_dp"
+            android:paddingRight="@dimen/padding_thirteen_dp"
+            android:src="@drawable/tab_me_unselect"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <in.srain.cube.views.ptr.PtrClassicFrameLayout
+                android:id="@+id/ptr_activity_private_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                cube_ptr:ptr_duration_to_close_header="300"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1"
+                cube_ptr:ptr_resistance="2.7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_activity_private_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_context_default"
+                    android:cacheColorHint="@null"
+                    android:scrollbars="vertical"/>
+            </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e9e9e9"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_activity_private_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_four_dp"
+                    android:layout_weight="0.96"
+                    android:background="@drawable/bg_message_edit"
+                    android:maxLines="5"
+                    android:padding="@dimen/padding_eight_dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_sixteen_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_private_message_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_four_dp"
+                    android:background="@drawable/radius_button_refush_text_bg"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/padding_twelve_dp"
+                    android:paddingRight="@dimen/padding_twelve_dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/text_send"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_message_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/targets_forty_five_dp"
+                    android:layout_height="@dimen/targets_forty_five_dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/icon_notice"/>
+
+                <TextView
+                    android:id="@+id/tv_activity_message_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/text_sixteen_sp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.choudao.equity.HelpAndFeedbackActivity">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_shengfu_pay_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_view_list_selector_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/targets_sixty_five_dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:text="@string/text_shengfu_pay_help"
+            android:textColor="#3f3f3f"
+            android:textSize="@dimen/text_eighteen_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_eleven_dp"
+            android:src="@drawable/icon_next_bg"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_ten_dp"
+        android:layout_marginRight="@dimen/margin_ten_dp"
+        android:background="@color/grey"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bank_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_view_list_selector_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/targets_sixty_five_dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:text="@string/text_bank_help"
+            android:textColor="#3f3f3f"
+            android:textSize="@dimen/text_eighteen_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_eleven_dp"
+            android:src="@drawable/icon_next_bg"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_ten_dp"
+        android:layout_marginRight="@dimen/margin_ten_dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/ll_term_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_view_list_selector_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/targets_sixty_five_dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:text="@string/text_term_help"
+            android:textColor="#3f3f3f"
+            android:textSize="@dimen/text_eighteen_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_eleven_dp"
+            android:src="@drawable/icon_next_bg"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_ten_dp"
+        android:layout_marginRight="@dimen/margin_ten_dp"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/ll_qa_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/list_view_list_selector_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/targets_sixty_five_dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_fifteen_dp"
+            android:layout_weight="1"
+            android:text="@string/text_qa_help"
+            android:textColor="#3f3f3f"
+            android:textSize="@dimen/text_eighteen_sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_eleven_dp"
+            android:src="@drawable/icon_next_bg"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mine_line_bg"/>
+
+</LinearLayout>

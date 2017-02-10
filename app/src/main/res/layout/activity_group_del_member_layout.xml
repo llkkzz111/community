@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.choudao.equity.ProfileUpdateActivity">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_group_member_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/targets_sixty_dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/targets_sixty_dp"
+            android:layout_height="@dimen/targets_sixty_dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_group_member_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="true"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:minHeight="60dp"
+            android:singleLine="true"
+            android:textColorHint="@color/tab_uncheck_color"
+            android:textSize="@dimen/text_sixteen_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_device_color" />
+
+    <ListView
+        android:id="@+id/lv_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:divider="@color/list_device_color"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/list_view_list_selector_bg" />
+</LinearLayout>

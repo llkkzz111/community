@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_found"
+        app:actionLayout="@layout/dots"
+        android:icon="@drawable/tab_menu_community_bg"
+        android:title="@string/text_tab_home"/>
+    <item
+        android:id="@+id/action_message"
+        app:actionLayout="@layout/dots"
+        android:icon="@drawable/tab_menu_message_bg"
+        android:title="@string/text_tab_message"/>
+    <item
+        android:id="@+id/action_me"
+        app:actionLayout="@layout/dots"
+        android:icon="@drawable/tab_menu_me_bg"
+        android:title="@string/text_tab_me"/>
+</menu>

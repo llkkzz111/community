@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#dde9e8</color>
+    <color name="colorPrimaryDark">#4FCF5F</color>
+    <color name="colorAccent">#4FCF5F</color>
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="grey">#d2d2d2</color> <!-- 灰色 -->
+    <color name="lightred">#FF1C07</color> <!-- 亮红色 -->
+    <color name="grey_trans">#70000000</color> <!-- 灰色 -->
+
+    <color name="tab_check_color">#28CD68</color>
+    <color name="tab_uncheck_color">#a2a2a2</color>
+    <color name="community_screen_check_color">#dde9e8</color>
+    <color name="community_screen_uncheck_color">#f0f5f5</color>
+    <color name="dim_gray">#808080</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="creditcard_blue">#0088ff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dialog_ok_default">#21cf87</color>
+    <color name="dialog_ok_checked">#39df99</color>
+    <color name="dialog_cancle_stroke">#676767</color>
+    <color name="dialog_cancel_bg">#e7e7e7</color>
+    <color name="cube_mints_f1f1f1">#f1f1f1</color>
+    <color name="btn_guide_defult_bg">#00bbdd</color>
+    <color name="btn_guide_checked_bg">#00c9dd</color>
+    <color name="tags_text_bg">#dde9e8</color>
+
+    <color name="mine_line_bg">#f0f4f4</color>
+    <color name="profile_layout_bg">#dbf3ec</color>
+    <color name="profile_un_follow_bg">#00d98f</color>
+    <color name="profile_un_follow_text_color">#c9c9c9</color>
+    <color name="popup_item_check_color">#d2d2d2</color>
+    <color name="profile_edit_hint_text">#a2a2a2</color>
+    <color name="text_default_color">#181818</color>
+    <color name="text_title_warning_text_color">#e48266</color>
+    <color name="bg_list_top">#f1f1f1</color>
+
+    <color name="text_gray">#8C000000</color>
+    <color name="divider_gray">#AAe2e2e2</color>
+    <color name="list_device_color">#d9d9d9</color>
+    <color name="text_profile_title_color">#cacaca</color>
+    <color name="text_defult_color">#606060</color>
+    <color name="text_message_name_color">@color/tab_uncheck_color</color>
+
+    <color name="bg_context_default">#f0f5f5</color>
+</resources>

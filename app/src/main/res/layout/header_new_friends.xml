@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_context_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header_new_friend_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/targets_sixty_dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/targets_sixty_dp"
+            android:layout_height="@dimen/targets_sixty_dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_contacts_search"
+            android:textColor="@color/tab_uncheck_color"
+            android:textSize="@dimen/text_sixteen_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_device_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_header_mobile_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_ten_dp"
+            android:drawablePadding="@dimen/padding_five_dp"
+            android:drawableTop="@drawable/icon_add_contact"
+            android:text="添加手机联系人"
+            android:textColor="@color/text_defult_color"
+            android:textSize="@dimen/text_fourteen_sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="8dp"
+        android:background="@color/list_device_color" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_device_color" />
+
+</LinearLayout>

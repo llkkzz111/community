@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_view_list_selector_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_view_list_selector_bg"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_mob_contacts_head"
+            android:layout_width="@dimen/targets_sixty_dp"
+            android:layout_height="@dimen/targets_sixty_dp"
+            android:padding="@dimen/padding_eight_dp"
+            android:src="@drawable/icon_account_no_pic" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_mob_contacts_phone_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/text_sixteen_sp" />
+
+
+            <TextView
+                android:id="@+id/tv_mob_contacts_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/tab_uncheck_color"
+                android:textSize="@dimen/text_fourteen_sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_mob_contacts_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/radius_button_refush_text_bg"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:padding="@dimen/padding_five_dp"
+            android:textColor="@color/text_defult_color" />
+    </LinearLayout>
+
+</LinearLayout>

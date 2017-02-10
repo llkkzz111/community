@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/margin_five_dp"
+        android:layout_marginRight="@dimen/margin_five_dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/radius_tag_text_bg"
+        android:paddingBottom="@dimen/padding_one_dp"
+        android:paddingLeft="@dimen/padding_five_dp"
+        android:paddingRight="@dimen/padding_five_dp"
+        android:paddingTop="@dimen/padding_one_dp"
+        android:textColor="#a2a2a2"
+        android:textSize="@dimen/text_thirteen_sp">
+
+    </TextView>
+</LinearLayout>

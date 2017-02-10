@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.choudao.equity.CheckVerificationCodeActivity">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/community_screen_uncheck_color"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_tip_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_ten_dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="bottom"
+            android:text="@string/text_resend_verification_no_tip"
+            android:textColor="#6c727d"
+            android:textSize="@dimen/text_seventeen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_add_edit_text_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/targets_sixty_five_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/text_phone_no"
+                android:textSize="@dimen/text_seventeen_sp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/targets_sixty_five_dp"
+                android:textColor="#181818"
+                android:textSize="@dimen/text_seventeen_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_add_edit_text_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/targets_sixty_five_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/text_verification_no"
+                android:textSize="@dimen/text_seventeen_sp" />
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/text_hint_input_verification_no"
+                android:maxLines="1"
+                android:minHeight="@dimen/targets_sixty_five_dp"
+                android:textColor="#181818"
+                android:textColorHint="#cacaca"
+                android:textSize="@dimen/text_seventeen_sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_chenge_phone_bg"
+            android:gravity="center"
+            android:minHeight="@dimen/targets_fifty_dp"
+            android:text="@string/text_complete"
+            android:textColor="@color/btn_follow_text_color"
+            android:textSize="@dimen/text_seventeen_sp" />
+
+        <TextView
+            android:id="@+id/tv_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_resend_verification_no"
+            android:textColor="#6c727d"
+            android:textSize="@dimen/text_fourteen_sp" />
+
+    </LinearLayout>
+</LinearLayout>

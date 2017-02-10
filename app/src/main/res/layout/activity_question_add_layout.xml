@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.choudao.equity.view.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_add_edit_text_bg"
+        android:hint="@string/text_hint_input_add_question"
+        android:maxHeight="100dp"
+        android:minHeight="@dimen/targets_fifty_dp"
+        android:paddingBottom="@dimen/padding_five_dp"
+        android:paddingLeft="@dimen/padding_fifteen_dp"
+        android:paddingRight="@dimen/padding_fifteen_dp"
+        android:paddingTop="@dimen/padding_five_dp"
+        android:textColor="#606060"
+        android:textColorHint="#cacaca"
+        android:textSize="@dimen/text_seventeen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_fifteen_dp"
+        android:layout_marginRight="@dimen/margin_fifteen_dp"
+        android:layout_marginTop="@dimen/margin_five_dp"
+        android:background="@color/grey" />
+
+    <com.choudao.equity.view.CDWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
