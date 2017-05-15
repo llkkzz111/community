@@ -48,6 +48,8 @@ import com.choudao.imsdk.utils.Logger;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Inject;
+
 import cn.jpush.android.api.JPushInterface;
 import retrofit2.Call;
 
@@ -55,6 +57,7 @@ import retrofit2.Call;
 /**
  * Created by Han on 2016/3/4.
  */
+
 public class MainActivity extends BaseActivity implements View.OnClickListener, IReceiver {
     private static final String TAG = "===MainActivity===";
     private final int UPDATE_NOREAD_MSG = 1;
@@ -71,7 +74,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     private FragmentTransaction fragmentTransaction = null;
     private Intent intent = null;
     private boolean socketLogin = false;
-
+@Inject BaseApplication application;
     private IMServiceConnectorAIDL connectorAIDL;
     private BaseDialogFragment dialog = null;
     private Handler handler = new Handler() {
@@ -144,6 +147,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         IMMessageDispatcher.bindMessageTypeArray(msgTypeArray, this);
         setContentView(R.layout.activity_main);
         imServiceConnector.bindService(this);
+        ((BaseApplication)getApplication()).getApplicationComponent().getContext();
         JPushInterface.clearAllNotifications(mContext);
 
         tvMsgCount = (TextView) findViewById(R.id.tv_activity_main_msgcount);

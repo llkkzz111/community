@@ -1,5 +1,6 @@
 package com.choudao.equity.dialog;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 
 import com.choudao.equity.adapter.MenuListAdapter;
@@ -13,13 +14,14 @@ import java.util.List;
  * Created by dufeng on 16/12/2.<br/>
  * Description: MessageMenuDialog
  */
-
+@SuppressLint("ValidFragment")
 public class MessageMenuDialog extends MenuDialog {
     private static final int COPY = 0;
 
     private Context context;
     private String contentStr;
 
+    @SuppressLint("ValidFragment")
     public MessageMenuDialog(Context context, String contentStr) {
         super(context);
         this.context = context;

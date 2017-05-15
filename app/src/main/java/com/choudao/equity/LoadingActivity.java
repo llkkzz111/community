@@ -2,8 +2,10 @@ package com.choudao.equity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.choudao.equity.base.BaseActivity;
+import com.choudao.equity.base.BaseApplication;
 import com.choudao.equity.utils.ConstantUtils;
 import com.choudao.equity.utils.PreferencesUtils;
 import com.choudao.equity.utils.Utils;
@@ -11,15 +13,23 @@ import com.choudao.equity.utils.Utils;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import javax.inject.Inject;
+
 import cn.jpush.android.api.JPushInterface;
 
 
 public class LoadingActivity extends BaseActivity {
 
-
+    @Inject BaseApplication application;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (application!=null){
+            Toast.makeText(mContext, "buweikong", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(mContext, "weikong", Toast.LENGTH_SHORT).show();
+
+        }
         JPushInterface.setAlias(getBaseContext(), "", null);
         setTheme(R.style.AppTheme_Launcher);
         setContentView(R.layout.activity_loading);

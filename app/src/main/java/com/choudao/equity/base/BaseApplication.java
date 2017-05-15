@@ -34,6 +34,10 @@ public class BaseApplication extends IMApplication implements Logger.LoggerListe
 
     public static boolean isMsgActivityShow = false;
 
+
+
+    public ApplicationComponent applicationComponent;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -49,6 +53,7 @@ public class BaseApplication extends IMApplication implements Logger.LoggerListe
         phoneMark = Utils.getEquipId();
         appVersion = Utils.getVersion(this);
 
+        applicationComponent = DaggerApplicationComponent.builder().applicationModule(new ApplicationModule(this)).build();
         //获取登陆状态
         ConstantUtils.isLogin = PreferencesUtils.getLoginState();
         ApiUtils.BASE_HTTP_URL = ConstantUtils.BASE_HTTP_URL;
@@ -57,6 +62,9 @@ public class BaseApplication extends IMApplication implements Logger.LoggerListe
         initIMService();
         initUmeng();
         initStetho();
+    }
+    public ApplicationComponent getApplicationComponent() {
+        return applicationComponent;
     }
 
     private void initIMService() {
