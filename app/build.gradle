@@ -66,7 +66,6 @@ android {
         }
         release {
             buildConfigField "boolean", "LOG_DEBUG", "false"
-            signingConfig signingConfigs.release
             minifyEnabled true
             zipAlignEnabled true
 //            移除无用的resource文件
@@ -84,10 +83,7 @@ android {
         exclude 'META-INF/NOTICE.txt'
         exclude 'META-INF/LICENSE.txt'
     }
-    dexOptions {
-//        preDexLibraries = false
-        javaMaxHeapSize "8g"
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
