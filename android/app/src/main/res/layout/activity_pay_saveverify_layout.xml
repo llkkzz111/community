@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_40"
+
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent_40"
+        android:fitsSystemWindows="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f7f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="支付安全校验"
+                android:textColor="@color/text_black_333333"
+                android:textSize="18sp"/>
+
+
+            <ImageView
+                android:id="@+id/iv_left_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sp_16"
+                android:src="@drawable/icon_close_grey"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_grey_DDDDDD"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/tv_name_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="当前用户，李师师！"
+                android:textColor="@color/text_black_333333"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_code_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <com.ocj.oms.view.ClearEditText
+                    android:id="@+id/et_code"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:drawableRight="@drawable/icon_clear"
+                    android:hint="@string/hint_input_mobilecode"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_send_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_verify_code"
+                    android:gravity="center"
+                    android:minWidth="80dp"
+                    android:padding="5dp"
+                    android:text="@string/btn_fetch_verify_code"
+                    android:textColor="@color/text_red_E5290D"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pwd_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edittext_normal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ocj.oms.view.ClearEditText
+                    android:id="@+id/et_password"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/icon_clear"
+                    android:hint="@string/hint_input_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_pwd_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_password_selecter"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_forget"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="right"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@null"
+                android:textColor="@color/text_grey_666666"
+                android:text="忘记密码"/>
+
+            <LinearLayout
+                android:id="@+id/ll_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_error_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_alarm"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="密码三次输入错误，请通过验证"
+                    android:textColor="@color/text_red_E5290D"/>
+
+                <com.ocj.oms.mobile.view.SlideLockView
+                    android:id="@+id/slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    app:slide_prospect="@color/grey">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="向右滑动到底部"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_lock_ocj"/>
+                </com.ocj.oms.mobile.view.SlideLockView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_btn_red_"
+                android:text="确 认"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_swich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="使用动态码校验"
+                android:textColor="@color/text_grey_666666"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

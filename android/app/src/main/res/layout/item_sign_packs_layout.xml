@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/tv_status"
+        android:text="抵用券10元"
+        android:textColor="@color/text_grey_666666"
+        android:textSize="@dimen/text_fourteen_sp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:text="已使用"
+        android:textColor="@color/text_grey_666666"
+        android:textSize="@dimen/text_fifteen_sp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginBottom="10dp"
+        android:text="2017.04.29"
+        android:textColor="@color/text_grey_666666"
+        android:textSize="@dimen/text_twelve_sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_date"
+        android:background="@color/text_grey_DDDDDD"/>
+
+</RelativeLayout>

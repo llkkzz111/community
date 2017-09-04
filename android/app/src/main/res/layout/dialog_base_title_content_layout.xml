@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_dialog_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_ten_dp"
+        android:src="@drawable/img_popup_bg"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请留下手机号"
+        android:textColor="@color/text_black_333333"
+        android:textSize="@dimen/text_twenty_sp"/>
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_thirty_dp"
+        android:layout_marginRight="@dimen/padding_thirty_dp"
+        android:paddingBottom="@dimen/padding_ten_dp"
+        android:text="让我们更好的为您服务"
+        android:textColor="@color/text_grey_999999"
+        android:textSize="@dimen/text_eighteen_sp"/>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_grey_DDDDDD"
+    android:orientation="vertical">
+
+    <include layout="@layout/global_divider_space" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text=" 本周新品 "
+            android:textColor="@color/text_purple"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_text"
+            android:src="@drawable/icon_point"/>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_text"
+            android:src="@drawable/icon_point"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_grey_DDDDDD"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_friday_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="visible"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_friday_special1"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="125dp"-->
+    <!--android:layout_marginRight="1dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_background1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@color/lightred" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_special_name1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="近保专场"-->
+    <!--android:textColor="@color/text_black_333333"-->
+    <!--android:textSize="@dimen/text_fifteen_sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_description1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tv_special_name1"-->
+    <!--android:maxEms="4"-->
+    <!--android:text="品质和爱始终不变"-->
+    <!--android:textColor="@color/text_grey_666666"-->
+    <!--android:textSize="@dimen/text_thirteen_sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_friday_special2"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="125dp"-->
+    <!--android:layout_marginRight="1dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_background2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@color/lightred" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_special_name2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="近保专场"-->
+    <!--android:textColor="@color/text_black_333333"-->
+    <!--android:textSize="@dimen/text_fifteen_sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_description2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tv_special_name2"-->
+    <!--android:maxEms="4"-->
+    <!--android:text="品质和爱始终不变"-->
+    <!--android:textColor="@color/text_grey_666666"-->
+    <!--android:textSize="@dimen/text_thirteen_sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_friday_special3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="125dp"-->
+    <!--android:layout_marginRight="1dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_background3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@color/lightred" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_special_name3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="近保专场"-->
+    <!--android:textColor="@color/text_black_333333"-->
+    <!--android:textSize="@dimen/text_fifteen_sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_description3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tv_special_name3"-->
+    <!--android:maxEms="4"-->
+    <!--android:text="品质和爱始终不变"-->
+    <!--android:textColor="@color/text_grey_666666"-->
+    <!--android:textSize="@dimen/text_thirteen_sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ocj.oms.mobile.view.SquareLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item_recomend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:text="销量第一"/>
+
+            <TextView
+                android:id="@+id/tv_advertisement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                tools:text="销量第一"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_promotion_type"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_global_promote"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"/>
+
+</com.ocj.oms.mobile.view.SquareLinearLayout>

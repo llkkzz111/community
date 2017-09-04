@@ -1,0 +1,454 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/selector_layout_click_bg"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_black_444444"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_grey_DDDDDD"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_choose_reason"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_layout_click_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_goods_type"
+                    style="@style/return_goods_text_style1"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/return_goods_reason"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_reasons"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:indeterminateTint="#999999"
+                    android:indeterminateTintMode="src_atop"/>
+
+                <TextView
+                    android:id="@+id/tv_goods_choose"
+                    style="@style/return_goods_text_style2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/return_goods_reason"/>
+
+                <ImageView
+                    android:id="@+id/iv_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_down"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_grey_DDDDDD"/>
+
+            <com.ocj.oms.view.FixHeightRecycleView
+                android:id="@+id/rv_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></com.ocj.oms.view.FixHeightRecycleView>
+
+            <include layout="@layout/layout_gray_divider_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    style="@style/return_goods_text_style1"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/return_des"/>
+
+                <TextView
+                    android:id="@+id/tv_nums"
+                    style="@style/return_goods_text_style2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0/200"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_gray_divider_2"/>
+
+            <com.ocj.oms.mobile.view.ScrollEditText
+                android:id="@+id/edt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="请举例描述您退货的原因"
+                android:maxLength="200"
+                android:padding="15dp"
+                android:textColor="#999999"
+                android:textSize="14sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_goods_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_gray_divider_1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="@string/please_exchange_goods"
+                        android:textColor="#333333"
+                        android:textSize="14sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/pb_item_detail"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:indeterminateTint="#999999"
+                        android:indeterminateTintMode="src_atop"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/layout_gray_divider_2"/>
+
+                <include
+                    android:id="@+id/layout_good_item"
+                    layout="@layout/item_exchange_goods_layout"/>
+
+                <include layout="@layout/layout_gray_divider_2"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_gray_divider_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/return_goods_text_style1"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/if_be_used"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_used"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:checked="true"
+                        android:text="@string/be_used"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_un_used"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/not_be_used"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_gray_divider_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/return_goods_text_style1"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/goods_is_ok"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_goods_ok"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:checked="true"
+                        android:text="@string/yes"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_goods_not_ok"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/no"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_gray_divider_2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_goods_not_ok_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_layout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/return_goods_text_style1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/missing_main_gift"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_missing_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:button="@drawable/selecter_radio_return_exchange"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_gray_divider_3"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_package_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_layout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/return_goods_text_style1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/outside_package_broken"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_outside_package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:button="@drawable/selecter_radio_return_exchange"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_return_cash_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_gray_divider_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/return_goods_text_style1"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/refund_method"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_gray_divider_2"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_transfer_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_layout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/return_goods_text_style1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/transfer_payment"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_transfer_payment"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_gray_divider_3"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_original_payment_method_returned"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/selector_layout_click_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/return_goods_text_style1"
+                            android:text="@string/original_payment_method_returned"/>
+
+                        <TextView
+                            style="@style/return_goods_text_style1"
+                            android:text="@string/cash_encryption_returned"
+                            android:textColor="#666666"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/rb_original_payment_method_returned"
+                        style="@style/radio_button_selector_return_exchange"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:checked="false"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_gray_divider_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/return_goods_text_style1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/upload_credentials"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_gray_divider_2"/>
+
+            <com.ocj.oms.view.FixedGridView
+                android:id="@+id/gv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:listSelector="#00ffffff"
+                android:numColumns="4"
+                android:scrollbars="none"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:padding="18dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_btn_return_exchange_bg"
+                    android:text="@string/confirm_submission"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

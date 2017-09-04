@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewTimer">
+        <attr name="timer_total" format="integer"/>
+        <attr name="timer_space" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlideLockStyle">
+        <attr name="slide_background" format="reference"/>
+        <attr name="slide_prospect" format="reference"/>
+        <attr name="slide_thumb" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="请输入礼包背面的卡号和密码，将余额转存为东方购物心意畅想礼包账户"
+        android:textColor="@color/text_grey_666666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext_normal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="卡号"
+            android:textColor="@color/text_black_333333"/>
+
+        <com.ocj.oms.view.ClearEditText
+            android:id="@+id/et_gift_no"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@null"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_clear"
+            android:gravity="center_vertical|right"
+            android:hint="请输入卡号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edittext_normal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="@color/text_black_333333"/>
+
+        <com.ocj.oms.view.ClearEditText
+            android:id="@+id/et_gift_pwd"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_clear"
+            android:gravity="center_vertical|right"
+            android:hint="请输入密码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_alarm"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="验证码三次输入错误，请通过验证"
+            android:textColor="@color/text_red_E5290D"/>
+
+        <com.ocj.oms.mobile.view.SlideLockView
+            android:id="@+id/slide"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:slide_prospect="@color/grey">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="向右滑动到底部"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_lock_ocj"/>
+        </com.ocj.oms.mobile.view.SlideLockView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_qerry_balance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/radius_selector_btn_register"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</LinearLayout>

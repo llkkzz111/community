@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_60"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_reg_packet_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="215dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_red_packet_tip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您，中奖啦"
+                android:textColor="@color/text_red_packet"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxLines="1"
+                android:text="........................................ "
+                android:textColor="@color/text_red_packet"
+                android:textSize="20sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="2,75元抵用券礼包,O111552016,"
+                android:textColor="@color/text_red_packet"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="使用时间：2017.06.01 - 2017.10.31"
+                android:textColor="@color/text_grey_999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="查看奖品详情请前往: 我的 > 抵用券"
+                android:textColor="@color/text_grey_999999"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="166dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/bg_red_packet"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_close_grey"/>
+
+
+</RelativeLayout>

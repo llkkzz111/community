@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item"
+    android:layout_width="330dp"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rectangle_white_bolder_1px">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_goods"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textColor="@color/text_grey_333"
+            android:textSize="@dimen/text_fourteen_sp"
+            tools:text="      美国The Face Shop奥林巴斯调理修护紧致精华素 "/>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            style="@style/nation_img_style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_goods"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_goods"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/text_grey_666666"
+            android:textSize="@dimen/text_twelve_sp"
+            tools:text="商品故事 来自欧洲的紧致 马尔凯栽培的花瓣、树叶、果实"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_goods"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_goods"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/lightred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="699"
+                android:textColor="@color/lightred"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

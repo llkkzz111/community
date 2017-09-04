@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ocj.oms.mobile">
+
+    <!-- 允许应用获取网络信息状态，如当前的网络连接是否有效。 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许应用访问手机状态。 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许应用可以访问网络。 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许应用打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 允许应用写入外部存储。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 魅族手机弹toast需要 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- Required  Jpush官方定义的权限，允许应用接收JPUSH内部代码发送的广播消息。 -->
+    <uses-permission android:name="com.choudao.equity.permission.JPUSH_MESSAGE"/>
+    <!-- 允许应用可以接收点亮屏幕或解锁广播。 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <!-- 允许应用在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 允许应用读取外部存储。 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 允许应用读写系统设置项。 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 允许应用震动。 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 允许应用挂载/卸载 外部文件系统。 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- 允许应用程序使用照相机的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 允许应用程序获取Wi-Fi网络状态信息的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许应用程序修改全局声音设置的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- 允许应用改变Wi-Fi的连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 允许应用改变网络的连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!-- 获取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+    <!-- 获取位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--指纹权限-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.login.association.AccountAssociationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.safty.SecurityCheckActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.login.media.MobileReloginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.safty.SelectAreaActivity"
+            android:screenOrientation="portrait"/>
+        <!-- begin 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+
+        <!-- end 支付宝 -->
+        <!-- begin QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100846439"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".ui.register.RegisterInputMobileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- end QQ -->
+        <!-- begin 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- end 微信 -->
+        <activity
+            android:name=".ui.reset.ResetCheckActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.reset.ResetPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.reset.ResetMailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.reset.ResetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".third.pay.union.UnionPayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".dialog.PopupWindowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent"/>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- end 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false"/>
+
+        <activity
+            android:name=".ui.personal.wallet.integral.IntegralDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.imprest.ImprestDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.integral.IntegralExchangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.packs.GiftcardsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.packs.PacksRechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".ui.personal.wallet.opoint.OcouponsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.vouchers.VocherDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.tao.GrabVocherActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.ProfileInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.order.OrderPayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.adress.ReceiverAddressManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.adress.ReceiverAddressSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.adress.AddressEditActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.advice.AdviceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.advice.AdviceCtiticActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.EditNickNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.EditEmailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.EditMobileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.selecter.PhotoSelectorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.safty.BindMobileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.SettingTextSizeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.order.H5PayActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".third.share.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Share_Style"/>
+        <activity
+            android:name=".ui.AbroadBuyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.createcomment.CreateComentActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.personal.order.RetExGoodsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.scan.ShareCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.scan.ScannerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.redpacket.LotteryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+        <activity
+            android:name=".ui.redpacket.LotteryRuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+        <activity
+            android:name=".ui.redpacket.RedPacketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent"/>
+        <activity
+            android:name=".ui.sign.SignActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.LocaleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.VipInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.order.OrderPaySuccedActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.video.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.global.GlobalListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.scan.ScanResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.setting.WeChatGiftActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.rn.RNActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.ReserveOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.UiTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.AdviceSuccedActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.personal.wallet.packs.UseInstructionActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="898551f00589bf10ab52cc6b9dbd9ce7"/>
+
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- 定位需要的服务 -->
+
+        <receiver
+            android:name=".receiver.OCJReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.ocj.oms.mobile"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.ocj.oms.common.image.glide.CustomCachingGlideModule"
+            android:value="GlideModule"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ocj.oms.mobile.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name=".ui.webview.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.notAnimation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".dialog.PaySafeVerifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent"/>
+        <activity android:name=".zxing.activity.CaptureActivity"/>
+
+        <activity
+            android:name=".ui.video.VideoDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.GuideActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.video.player.OcjLiveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+
+
+        <activity
+            android:name=".ui.personal.setting.SetDefaultAdressActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".ui.video.player.OcjLiveEmptyActivity"/>
+    </application>
+
+</manifest>

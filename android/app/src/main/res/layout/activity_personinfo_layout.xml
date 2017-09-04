@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--title bar-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            style="@style/personinfo_title_Style"
+            android:text="个人资料"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_grey_DDDDDD"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tv_person_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/layout_background_normal"
+            android:minHeight="80dp">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="头像"/>
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nickname"
+            style="@style/personinfo_itme_Style">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="昵称"/>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                style="@style/personinfo_text_gray666_Style"
+                tools:text="奥斯卡"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            style="@style/personinfo_Style_noline">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="用户名"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/personinfo_text_gray666_Style"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:text="senderas@yah.net"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:minHeight="30dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_address_title"
+                style="@style/personinfo_text_Style"
+                android:text="默认地址"/>
+
+
+            <ImageView
+                android:id="@+id/img_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+
+            <TextView
+                android:id="@+id/tv_defalt_address"
+                style="@style/personinfo_text_gray666_Style"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/img_address"
+                android:layout_toRightOf="@id/tv_address_title"
+                android:gravity="right"
+                android:hint=""/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_adress_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/person_mail"
+            style="@style/personinfo_itme_Style">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="邮箱"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/personinfo_text_gray666_Style"
+                tools:text="senderas@yah.net"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_mobile"
+            style="@style/personinfo_itme_Style">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="手机号"/>
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                style="@style/personinfo_text_gray666_Style"
+                tools:text="15912345678"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person_birthday"
+            style="@style/personinfo_Style_noline">
+
+            <TextView
+                style="@style/personinfo_text_Style"
+                android:text="生日"/>
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                style="@style/personinfo_text_gray666_Style"
+                tools:text="2016.7.14"/>
+
+            <ImageView
+                android:id="@+id/iv_isvisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_arrow"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

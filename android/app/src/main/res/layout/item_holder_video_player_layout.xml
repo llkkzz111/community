@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/ll_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_grey_666666"
+            android:textSize="12sp"
+            tools:text="栏目：你猜猜是什么节目"/>
+
+        <com.ocj.oms.mobile.view.FixGridLayout
+            android:id="@+id/fix_gridlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:minWidth="50dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_video_descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:padding="@dimen/dp_10"
+        android:textColor="#666666"
+        android:background="@color/white"
+        android:textSize="@dimen/sp_14"
+        tools:text="我是视频描述我是视频描述我是视频描述我是视频描述fksdlfjsadlfsdfdsljfksakdfsdfjsdkfsalkfsadklfsadjfsasfjklfjdlsafjlsadf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent_40"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_video_time"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#dddddd"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离直播开始还有:  "
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            tools:text=" 00 天 00 时 00 分 00 秒" />
+    </LinearLayout>
+
+    <com.ocj.oms.view.FixHeightRecycleView
+        android:id="@+id/recycle_baking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

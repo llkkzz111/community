@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="350dp"
+    android:background="@drawable/bg_red_packet_tip"
+    android:orientation="vertical">
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:text="发现新版本是否更新"-->
+    <!--android:textColor="@color/text_black_333333"-->
+    <!--android:textSize="@dimen/text_seventeen_sp"-->
+    <!--android:visibility="gone"/>-->
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/pb_update"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:max="100"-->
+    <!--android:progress="100"-->
+    <!--android:visibility="gone"/>-->
+
+    <ImageView
+        android:id="@+id/iv_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_update"/>
+
+
+    <ScrollView
+        android:layout_width="221dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="7.5dp">
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.5dp"
+            android:layout_marginRight="15.5dp"
+            android:layout_marginTop="7.5dp"
+            android:text="1.aaaaaaaasaaaaaaaaaaaaaaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n1.aaaaaaaa;\n"
+            android:textColor="@color/text_grey_666666"
+            android:textSize="14sp"/>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="22.5dp"
+        android:background="@drawable/bg_update_button"
+        android:gravity="center"
+        android:text="立即更新"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_grey_666666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/text_grey_666666"
+            android:textSize="@dimen/text_seventeen_sp"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_border"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="立即更新"
+            android:textColor="@color/text_grey_666666"
+            android:textSize="@dimen/text_seventeen_sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

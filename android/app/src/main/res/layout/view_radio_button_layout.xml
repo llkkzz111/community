@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    >
+
+    <RadioButton
+        android:id="@+id/tab_pay_style"
+        style="@style/radio_button_default_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_rb_selecter"
+        android:paddingBottom="@dimen/padding_five_dp"
+        android:paddingLeft="@dimen/padding_ten_dp"
+        android:paddingRight="@dimen/padding_ten_dp"
+        android:paddingTop="@dimen/padding_five_dp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenu">
+        <attr name="sml_scroller_duration" format="integer"/>
+        <attr name="sml_auto_open_percent" format="float"/>
+        <attr name="sml_scroller_interpolator" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="RatingBarAttributes">
+        <attr name="numStars" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="starPadding" format="integer" />
+        <attr name="drawableEmpty" format="reference" />
+        <attr name="drawableFilled" format="reference" />
+        <attr name="touchable" format="boolean" />
+        <attr name="clearRatingEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveSideBar">
+        <attr name="sidebar_lazy_respond" format="boolean"/>
+        <attr name="sidebar_text_size" format="dimension"/>
+        <attr name="sidebar_text_color" format="color"/>
+        <attr name="sidebar_max_offset" format="dimension"/>
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberAddSubView">
+        <attr name="value" format="integer|reference"/>
+        <attr name="minValue" format="integer|reference"/>
+        <attr name="maxValue" format="integer|reference"/>
+        <attr name="btnAddBackground" format="reference"/>
+        <attr name="btnSubBackground" format="reference"/>
+        <attr name="textViewBackground" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SquareRelativeLayout">
+        <attr name="width_percent" format="integer|reference"/>
+        <attr name="height_percent" format="integer|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color"/>
+        <attr name="laser_color" format="color"/>
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color"/>
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_text_size" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+</resources>

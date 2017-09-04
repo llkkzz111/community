@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/drawerLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/headLayout"
+            layout="@layout/head_global_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey"/>
+
+        <com.ocj.oms.mobile.view.GlobalFilterLayout
+            android:id="@+id/filterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey"/>
+
+        <include
+            layout="@layout/global_filter_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"/>
+
+        <com.ocj.oms.mobile.view.GlobalFilterLayout2
+            android:id="@+id/filterLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#ffffff">
+
+        <com.ocj.oms.mobile.ui.global.widget.GlobalCategeryLayout
+            android:id="@+id/categeryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.ocj.oms.mobile.ui.global.widget.GlobalTabCatLayout
+            android:id="@+id/areaCatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="text_grey_666">#666666</color>
+    <color name="text_grey_EEEEEE">#eeeeee</color>
+    <color name="text_red_FCE9E6">#FFFCE9E6</color>
+    <color name="text_red_E5290D">#E5290D</color>
+    <color name="transparent_40">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="whitesmoke">#F5F5F5</color>
+</resources>

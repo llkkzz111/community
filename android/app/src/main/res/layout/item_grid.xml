@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <com.ocj.oms.mobile.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:height_percent="1"
+        app:width_percent="1">
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_video_play"/>
+    </com.ocj.oms.mobile.view.SquareRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:ellipsize="end"
+        android:lines="2"
+
+        android:text="蜂蜜养生之道"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+
+    <com.ocj.oms.mobile.view.FixGridLayout
+        android:id="@+id/fix_gridlayout"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:paddingLeft="8dp"/>
+</LinearLayout>

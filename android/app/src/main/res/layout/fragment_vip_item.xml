@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_parent_item"
+              android:layout_width="match_parent"
+              android:layout_height="180dp"
+              android:background="@drawable/bg_vip"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/text_vip"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="VIP 礼物"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title1"
+            style="@style/text_vip_light"
+            android:maxLines="2"
+            android:text="有效期内每月奖励"/>
+
+        <TextView
+            android:id="@+id/tv_title2"
+            style="@style/text_vip_light"
+            android:maxLines="2"
+            android:paddingTop="5dp"
+            android:text="200鸥点"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_botton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_botton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="vip 会员有效期内，每月可三选一鸥券"
+            android:textColor="#99f7f7f7"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_botton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="7% OFF 券/100鸥券（900-100）/300鸥券（3500-300） "
+            android:textColor="#B9B9B9"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+</LinearLayout>

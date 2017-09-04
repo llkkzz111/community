@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_dialog_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="@dimen/padding_ten_dp"
+        android:src="@drawable/icon_login_dialog_error"/>
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_twenty_five_dp"
+        android:layout_marginRight="@dimen/padding_twenty_five_dp"
+        android:paddingBottom="@dimen/padding_ten_dp"
+        android:paddingTop="@dimen/padding_ten_dp"
+        android:text="无法通过验证，账号已冻结"
+        android:textColor="@color/text_black_333333"
+        android:textSize="18sp"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <com.ocj.oms.mobile.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+    </com.ocj.oms.mobile.view.SquareRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="delonghi/德龙"
+        android:textColor="@color/text_grey_333"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="家居电动咖啡机，你值得拥有"
+        android:textColor="@color/text_grey_333"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="¥ 6988"
+        android:textColor="@color/text_red_E5290D"
+        android:textSize="17sp"/>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_40"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_red_packet_tip"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_comment"/>
+
+
+        <TextView
+            android:id="@+id/tv_feel_good"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/bg_comment_button"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="挺好用的，鼓励下"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_feel_bad"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn_comment"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="不怎么好，提建议"
+            android:textColor="#ccF14967"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lookaroud"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn_comment"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="再用用看"
+            android:textColor="#ccF14967"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_abroad_buy_title_bg"
+        android:minHeight="50dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back_white1"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_global_buy_logo"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_message"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_banner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_sort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_freebuy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_friday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_special"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_baby_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_baby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_good_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_abroad_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_global_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_super_recomend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/iv_scroll_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_scroll_top"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>
+
+

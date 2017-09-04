@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/global_divider_space"/>
+
+    <com.ocj.oms.mobile.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:height_percent="4"
+        app:width_percent="15">
+
+        <ImageView
+            android:id="@+id/iv_top_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#f4f4f4"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_triangle"/>
+
+    </com.ocj.oms.mobile.view.SquareRelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="245dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_top_image"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edit_lottery_grey"
+            android:gravity="center"
+            android:hint="请输入幸运码"
+            android:maxLines="1"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/text_grey_666666"
+            android:textColorHint="@color/text_grey_666666"
+            android:textSize="@dimen/text_fifteen_sp"/>
+
+        <Button
+            android:id="@+id/btn_lottery"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_lottery_grey"
+            android:text="活动尚未开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_seventeen_sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_top_image"
+        android:layout_width="245dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

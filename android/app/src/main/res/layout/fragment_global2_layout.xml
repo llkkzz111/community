@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="28dp"/>
+    <com.ocj.oms.mobile.view.WaveSideBar
+        android:layout_alignParentRight="true"
+        android:id="@+id/sideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        app:sidebar_max_offset="0dp"
+        app:sidebar_text_size="12sp"
+        app:sidebar_text_color="#8D6E63"/>
+</RelativeLayout>

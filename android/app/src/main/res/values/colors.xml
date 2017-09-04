@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#d2d2d2</color> <!-- 灰色 -->
+
+    <color name="grey_ededed">#ededed</color> <!-- 灰色 -->
+    <color name="lightred">#FF1C07</color> <!-- 亮红色 -->
+    <color name="grey_trans">#70000000</color> <!-- 灰色 -->
+
+
+    <color name="text_grey_666666">#666666</color>
+    <color name="text_grey_999999">#999999</color>
+    <color name="text_grey_DDDDDD">#DDDDDD</color>
+    <color name="text_grey_EEEEEE">#EEEEEE</color>
+    <color name="text_grey_333">#333333</color>
+
+    <color name="text_grey_CCCCCC">#CCCCCC</color>
+
+    <color name="text_black_333333">#333333</color>
+    <color name="text_black_444444">#444444</color>
+    <color name="text_black_151515">#151515</color>
+
+    <color name="text_red_FCE9E6">#FFFCE9E6</color>
+    <color name="text_red_E5290D">#E5290D</color>
+    <color name="text_red_FF5136">#FF5136</color>
+    <color name="text_red_40FF6750">#40FF6750</color>
+    <color name="text_red_FAD4CF">#FAD4CF</color>
+    <color name="text_red_ed1c41">#ed1c41</color>
+    <color name="text_red_f35f79">#f35f79</color>
+    <color name="text_blue">#00AAEE</color>
+    <color name="transparent_white">#40ffffff</color>
+    <color name="transparent_40">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorDialog">#374ca2</color>
+    <color name="background_FFF7E5">#FFF7E5</color>
+
+    <color name="backgrou_vocher_start">#FF6048</color>
+    <color name="backgrou_vocher_end">#E5290D</color>
+
+    <color name="backgroud_gray_EDEDED">#EDEDED</color>
+
+    <color name="backgroud_delet">#ED1C41</color>
+
+    <color name="text_yellow">#FFC033</color>
+
+    <color name="text_orange">#FF8400</color>
+
+    <color name="backgroud_gray">#F9F8F8</color>
+
+    <color name="text_border">#979797</color>
+
+    <color name="text_magenta">#F14967</color>
+
+    <color name="text_purple">#A43DE5</color>
+    <color name="text_vip">#B47A2E</color>
+    <color name="scroll_bar">#CCA571</color>
+    <color name="backgroud_vip">#FDE8EC</color>
+
+    <color name="bg_lottery_edit">#FFF0CF</color>
+
+    <color name="transparent_60">#A0000000</color>
+
+    <color name="order_reduce">#E5290D</color>
+
+
+    <color name="red_packet_dialog_line">#F5A99E</color>
+    <color name="text_red_packet">#E73E25</color>
+    <color name="sign_yellow">#FFB000</color>
+    <color name="lottery_blue">#0792CC</color>
+    <color name="order_succed">#FFF1F4</color>
+    <color name="order_text">#EB5E48</color>
+
+    <color name="unchecked_star">#FEDE98</color>
+
+
+    <color name="bg_fce9e6">#FCE9E6</color>
+
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <color name="divider_color">#ededed</color>
+
+    <color name="purple_light">#F1DDFF</color>
+    <color name="purple_light2">#FFE6FC</color>
+
+
+</resources>

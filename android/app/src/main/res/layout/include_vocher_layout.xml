@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/ylc_quan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:textColor="@color/text_grey_333"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="20dp"
+        android:text="怎么可以没有抵用券"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:textColor="@color/text_grey_999999"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="10dp"
+        android:text="你值得拥有～"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>
