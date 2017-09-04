@@ -1,0 +1,64 @@
+{
+  "code": 200,
+  "message": "succeed",
+  "data": {
+    "order_no": "20170807332033",
+    "linePay_name": "",
+    "freight": 0,
+    "cupon_dcamt": "0",
+    "saveamt": "",
+    "showCancelOrderButtonYn": "true",
+    "proc_state_str": "",
+    "no_pay_amt": "128",
+    "sum_amt": "128",
+    "isShowFapiao": "false",
+    "curr_time": "1502085078583",
+    "youhu_dcamt": "0.0",
+    "receiver": {
+      "hp_no": "18975081325",
+      "receiver_name": "12",
+      "receiver_seq": "0000000001",
+      "receiver_addr": "上海市徐汇区12121212"
+    },
+    "pay_amt": "0",
+    "isShowComment": "false",
+    "giftcard": "",
+    "OnlineSub": "5",
+    "end_time": "86400000",
+    "isShowWuliu": "false",
+    "cancleReason": "",
+    "isNoPayButton": "true",
+    "order_date": "2017/08/07 13:45:37",c
+    "postalTaxAmt": "0",
+    "isShowReceiver": "false",
+    "showAmtStr": "订单总价",
+    "isNoPay": "true",
+    "deposit": "",
+    "order_close_date": "",
+    "showAmt": 128,
+    "items": [
+      {
+        "item_code": "15190038",
+        "rsale_amt": "128",
+        "isShowReturn": "false",
+        "item_name": "众仁极核 【电视团购】每日坚果25g*30包/盒 六种原味混合零食 健康节日礼盒",
+        "order_w_seq": "001",
+        "receiver_seq": "0000000001",
+        "isShowSend": "false",
+        "isShowReturnDetails": "false",
+        "dt_info": "无",
+        "isShowInstall": "false",
+        "order_d_seq": "001",
+        "itemSaveamt": "0",
+        "unit_code": "001",
+        "contentLink": "https://cdnimg.ocj.com.cn/item_images/item/15/19/0038/15190038L.jpg",
+        "isAllReturn": "false",
+        "order_amt": "168",
+        "isShowExchange": "false",
+        "order_g_seq": "001",
+        "item_qty": "1"
+      }
+    ],
+    "payDate": null
+  }
+}

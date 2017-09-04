@@ -1,0 +1,81 @@
+{
+  "orders": [
+    {
+      "item_codes": [
+        //商品编号  不能为空
+        "2831282013"
+      ],
+      "unit_codes": [
+        //商品规格编号  不能为空
+        "001"
+      ],
+      "cart_seqs": [
+        //购物车序号  不能为空
+        "48"
+      ],
+      "qtys": [
+        //商品数量  不能为空
+        "2"
+      ],
+      "msale_codes": [
+        //媒体编号
+        "TM" 对应文档的 item下面的msale_code
+      ],
+      "gift_item_codes": [],
+      //赠品编号
+      "gift_unit_codes": [],／／可为【】
+      //赠品代码
+      "gift_promo_no": [],／／可为【】
+      //活动促销编号
+      "media_channels": [],／／
+      //媒体频道
+      "source_urls": [],／／item下面的source_url
+      //请求商品的集合 
+      "source_objs": [],／／item下面的source_obj
+      //商品对象 
+      "emp_yn": "1",／／orders --->emp_yn
+      //是否使用员工折扣,1表示使用0表示不使用
+      "single_total_amt": "270", //total_real_price
+      //订单金额   不能为空
+      "contact_name": "",
+      //真实姓名         全球购/跨境通不能为空
+      "contact_resident_no": "",
+      //真实身份证号     全球购/跨境通不能为空
+      ”payStyle”: ”onlinePay”
+      //onlinePay在线支付  payOnDelivery货到付款
+      "itemCodeCoupon": "",／／默认第一个优惠券的编号  目前默认给""
+      //商品_鸥券编号_鸥券序列号 
+      "dccoupon_amt": "0.0",／／real_coupon_amt
+      //优惠券金额
+      "memberPromo": "" ／／memberPromo
+      //是不是会员特价  1表示是会员特价0表示不是会员特价
+      "zhiDingRiQi": "20170518",／／date_day_t
+      //制定日期 
+      "sendTime": "任意时间收货",／／
+      //["指定日配送,20170518",任意时间收货]
+      "app_first_dc_yn": "no"／／订单下面的app_first_dc_yn
+      //首购立减         "no"/"yes"
+    }
+  ],
+  "receiver_seq": "0000000001",
+  //接受地址的序号   不能为空
+  "msg": "",
+  //备注消息
+  "texbill_name": "测试1员工",
+  // 发票抬头          
+  "phone_invoice": "13633333389",
+  //手机
+  "email_invoice": "wujn34@ocj.com.cn",
+  //EMAIL
+  "invoice_type": "ELECTRONICS_INVOICE",
+  //发票类型    电子还是打印电子发票 [ELECTRONICS_INVOICE  ELECTRONICS_INVOICE_PRINT]
+  "invoice_taitou": "PERSONAL_INVOICE",
+  //发票抬头类型 个人 PERSONAL_INVOICE
+  "taxpayer_invoice": "61042411" ／／给""
+  //纳税人识别号
+  "order_token": ""  ／／给""
+  //order_token   
+  "total_amt": "548.32",
+  //总金额      不能为空
+}
+}

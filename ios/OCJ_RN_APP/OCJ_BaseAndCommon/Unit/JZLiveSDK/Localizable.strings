@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  JZLiveDemo
+
+  Created by wangcliff on 17/2/14.
+  Copyright © 2017年 jz. All rights reserved.
+*/
+
+//SDK
+"JZLive" = "直播";
+"JZPlayback" = "回放";
+"JZGold" = "金币";
+"JZTalk" = "想和大家说点什么";
+"JZSend" = "发送";
+"JZBrightness" = "亮度";
+"JZFlashlight" = " 闪光";
+"JZSwitchCamera" = " 翻转";
+"JZBeauty" = " 美颜";
+"JZExperience" = "经验值";
+"JZRemainder" = "余额";
+"JZKeyError" = "传入的key和secretKey不正确,请仔细检查";
+"JZErrorMissingSeparator" = "传入的NSDictionary的message格式不正确不存在(分隔符,),错误码";
+"JZErrorFormatError" = "传入NSDictionary数据格式不正确,错误码";
+"JZConnectSuccess" = "连接成功";
+"JZConnectFaild" = "连接失败";
+"JZConnectIsError" = "连接错误";
+"JZPrompt" = "提示";
+"JZSendOneGift" = "送出一个";
+"JZSendGift" = "送的";
+"JZWelcomeNewcomers" = "欢迎新人进入";
+"JZWelcome" = "欢迎";
+"JZComeIn" = "进入";
+"JZSwitchingLive" = "切换直播状态中...";
+"JZHostLeave" = "主播暂时离开";
+"JZUnknownError" = "未知错误";
+"JZUnauthorized" = "未授权";
+"JZPlayIllegal" = "非法的播放流程";
+"JZNetworkBad" = "网络太差";
+"JZNetworkError" = "网络出错";
+"JZNoInputFile" = "无输入文件";
+"JZNetworkConnectionFailure" = "网络连接失败";
+"JZVideoEncodingFormatError" = "不支持的视频编码格式";
+"JZNoDisplayWindow" = "无显示窗口";
+"JZInsufficientMemory" = "内存不足";
+"JZAccountLoggedElsewhere" = "你的帐号已在别处登录";
+"JZNotLoggedIn" = "您尚未登录账号,请您前去登录账号";
+"JZPromptNetworkBad" = "网络很差,是否退出直播";
+"JZYes" = "是";
+"JZNo" = "否";
+"JZMicrophoneOff" = "麦克风已关闭";
+"JZMicrophoneSettings" = "请打开手机设置->隐私->麦克风对相关软件进行设置";
+"JZCameraOff" = "摄像头已关闭";
+"JZSwitchingLive" = "请打开手机设置->隐私->相机对相关软件进行设置";
+"JZAudioError" = "音频编码初始化失败";
+"JZVideoError" = "视频编码初始化失败";
+"JZAccountBanned" = "你已被禁播或者是当前网络太差";
+"JZReconnect" = "重新连接";
+"JZQuit" = "退出";
+"JZCancel" = "取消";
+"JZOk" = "确定";
+"JZInsufficientMoney" = "当前余额不足，是否前去充值？";
+"JZPromptRecharge" = "余额不足,请及时充值";
+"JZNoNetwork" = "网络已断开,是否退出检查网络?";
+"JZCheckNetwork" = "请检查网络";
+"JZReceivedMessageTypeNormal" = "收到即时通讯普通消息";
+"JZReceivedMessageTypeBarrage" = "收到即时通讯弹幕消息";
+"JZReceivedMessageTypeSystem" = "收到即时通讯系统消息";
+"JZReceivedMessageTypeGift" = "收到即时通讯礼物消息";
+"JZReceivedMessageTypeLove" = "收到即时通讯点赞消息";
+"JZReceivedMessageTypeHostOff" = "收到即时通讯主播离开消息";
+"JZReceivedMessageTypeHostContinueLive" = "收到即时通讯主播继续直播消息";
+"JZReceivedMessageTypeResumeLive" = "收到即时通讯回放转直播消息";
+"JZSendMessageTypeNormal" = "发送普通消息成功";
+"JZSendMessageTypeBarrage" = "发送弹幕消息成功";
+"JZSendMessageTypeLove" = "发送点赞消息成功";
+"JZSendMessageTypeGift" = "发送礼物消息成功";
+"JZSendMessageTypeSystem" = "发送系统消息成功";
+"JZSendMessageTypeHostOff" = "发送主播离开消息成功";
+"JZSendMessageTypeHostContinueLive" = "发送主播继续直播消息成功";
+"JZSendMessageTypeResumeLive" = "发送回放转直播消息成功";
+"JZNetworkTimeout" = "网络超时";
+//DEMO
+"JZFinish" = "结束";
+
+//NSLocalizedString(@"JZBeauty", nil);
+
+

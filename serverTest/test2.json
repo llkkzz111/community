@@ -1,0 +1,171 @@
+{
+  "code": 200,
+  "message": "succeed",
+  "data": {
+    "receivers": {
+      "cust_no": "201503335998",            //顾客编号
+      "receivermanage_seq": "0000000001",
+      "receiver_seq": "0000000084",         //地址编号
+      "receiver_name": "赵云",              //收货人
+      "receiver_post": "200082",
+      "receiver_post_seq": "0406",
+      "receiver_addr": "眉州路300号7号楼",  //详细地址
+      "reveiver_hp" : "18684782733"         //手机号
+      "addr_m": "上海市上海市杨浦区",       //市区信息
+    },                               //默认收货地址
+    "orders":[
+      {
+        “orderType”:” ITEM_TYPE_YIBAN”  //自营商品
+      "payStyle": "onlinePay",         //支付方式: onlinePay：在线支付  ; payOnDelivery:货到付款 ; all:在线付款，货到付款
+      "deliveryStyle": "appointday",   //配送方式  appointday:指定日期配送 ;  arbitrarilyday：任意日期配送  (待确定)
+      "appointData":[
+      {
+      "date_day_t": "20170529",//时间
+      "weekdayDescr": "周三",  //时间对应周几
+      "workyn": "1",           //当前日期是否可配送   1:可以
+      "checkDay": "2"          //几天内可到达
+      },
+      {
+      "date_day_t": "20170529",
+      "weekdayDescr": "周三",
+      "workyn": "1",
+      "checkDay": "2"
+      }
+      ],                               //指定日数据
+      "isCouponUsable":”YES”            //该订单是否可以显示抵用券(YES：可显示； NO：不可显示)
+      "isExchangeCouponUse":”YES”       //该订单是否可以显示兑换抵用券框(YES：可显示； NO：不可显示),
+      "couponList":[
+      {
+      "coupon_no": 0,             //抵用券编号
+      "coupon_note": "A券",       //抵用券名称
+      "real_coupon_amt": 10       //金额
+      "dc_gb":10                 //10:按金额优惠   20:按比例优惠
+      “coupon_seq”:”000000003”   //抵用券序号
+      “dc_endDate”:              //结束日期
+      },
+      {
+      "coupon_no": “20169876328”, //抵用券编号
+      "coupon_note": "A券",       //抵用券名称
+      "real_coupon_amt": 10       //金额
+      "dc_gb":10                 //10:按金额优惠   20:按比例优惠
+      “coupon_seq”:”000000003”   //抵用券序号
+      “dc_endDate”:              //结束日期
+      }
+      ],                           //抵用券列表
+      "app_first_dc_yn": "no",     //是否首购
+      "emp_yn" :                   //是否使用员工折扣
+      "total_price": 1798,         //商品总金额
+      "dc_amt":180                 //优惠金额
+      "total_count": 2,            //商品数量
+      "total_postal_amt": 0,       //关税
+      "total_real_price":1618      //支付金额
+      "tag5_yn_tihuo": "NO",       //是否自提货
+      "memberPromo": ""            //是否会员特价商品 1：是  0：否
+      "carts": [
+      {
+      "cart_seq": 2,          //购物车序号
+      "cart_qty": 2,          //购物车商品数量
+      "item":{                //商品对象
+      "item_code":         //商品编号
+      "unit_code":              //商品规格编号
+      "item_name": "IC_TEXT201410141111",   //商品名称
+      "path": "http://xxx",     //商品图片地址
+      "count": 2                //商品数量
+      "colour":"白色",          //颜色
+      "type":"汽车",            //分类
+      "integral": "0.0",        //积分
+      "price":899               //商品价格
+      "last_sale_price":2       //最终销售价
+      "dc_amt":0                //优惠价格
+      "postal_taxamt_price": 0, //关税
+      "eightFiveDiscount":        //是否首购
+      }
+      //赠品信息
+      "twgiftcartVO":[
+      {
+      "giftcart_seq":1,                  //赠品序列号
+      "gift_item_code":"11111",          //赠品编号
+      "gift_unit_code":"001",            //赠品规格号
+      "giftpromo_no": "200911230014",    //促销编号
+      "giftpromo_seq": "001",            //促销序列号
+      "item_name": "乐扣乐扣双环保温瓶（Silver）(赠品)",   //赠品名称
+      "path": "http://image1.ocj.com.cn/item_images/item/11/79/75/117975A.jpg",   //图片地址
+      },
+      {
+      "giftcart_seq":2,                  //赠品序列号
+      "gift_item_code":"22222",          //赠品编号
+      "gift_unit_code":"002",            //赠品规格号
+      "giftpromo_no": "200911230014",    //促销编号
+      "giftpromo_seq": "001",            //促销序列号
+      "item_name": "乐扣乐扣双环保温瓶（Silver）(赠品)",   //赠品名称
+      "path": "http://image1.ocj.com.cn/item_images/item/11/79/75/117975A.jpg",   //图片地址
+      }
+      ]
+      },
+      {
+      "cart_seq": 3,          //购物车序号
+      "cart_qty": 1,          //购物车商品数量
+      "items":{               //商品对象
+      "item_code":          //商品编号
+      "unit_code":              //商品规格编号
+      "item_name": "IC_TEXT201410141111",   //商品名称
+      "path": "http://xxx",     //商品图片地址
+      "count": 2                //商品数量
+      "price":899               //商品价格
+      "last_sale_price":2       //最终销售价
+      "dc_amt":0                //优惠价格
+      "colour":"白色",          //颜色
+      "type":"汽车",            //分类
+      "integral": "0.0",        //积分
+      "postal_taxamt_price": 0, //关税
+      }
+      //赠品信息
+      "twgiftcartVO":[
+      {
+      "giftcart_seq":1,                  //赠品序列号
+      "gift_item_code":"11111",          //赠品编号
+      "gift_unit_code":"001",            //赠品规格号
+      "giftpromo_no": "200911230014",    //促销编号
+      "giftpromo_seq": "001",            //促销序列号
+      "item_name": "乐扣乐扣双环保温瓶（Silver）(赠品)",   //赠品名称
+      "path": "http://image1.ocj.com.cn/item_images/item/11/79/75/117975A.jpg",   //图片地址
+              "item_code": '19239131' // 商品的编码
+              "unit_code": '001' // 商品的规格
+      },
+      {
+      "giftcart_seq":2,                  //赠品序列号
+      "gift_item_code":"22222",          //赠品编号
+      "gift_unit_code":"002",            //赠品规格号
+      "giftpromo_no": "200911230014",    //促销编号
+      "giftpromo_seq": "001",            //促销序列号
+      "item_name": "乐扣乐扣双环保温瓶（Silver）(赠品)",   //赠品名称
+      "path": "http://image1.ocj.com.cn/item_images/item/11/79/75/117975A.jpg",   //图片地址
+      }
+      ]
+      }
+      ]
+    },
+      {
+        “orderType”:” ITEM_TYPE_KJT”   //跨境通
+      …….
+    },
+    ],                               //商品信息
+    "selectedTreceiver": null,       //客户选中的收货地址
+    "realNameInfo": true,            //是否全球购，驴妈妈商品，用于判断是否显示用户实名信息
+    "isShangHai",                    //是否上海本地顾客
+    "isInvoice":true,                //是否显示发票
+    "invoice": {
+      "tax_title": "个人",             //发票抬头
+      "email_addr": "xx@qq.com"   //邮箱
+      "tel": "18723867488"        //手机号
+    },                               //默认拉取最近一次订单的发票信息，有则拉取，无则空
+    "couponCount": 2                 //共可用抵用券数
+    "total_price": 1798,             //商品总价
+    "dc_amt": 180,                   //优惠总金额
+    "coupon_price": 0,               //抵用券优惠金额
+    "delivery_price":0,              //配送费
+    "total_postal_amt": 0,           //关税
+    "total_count": 2,                //商品总数
+    "total_real_price": 1618,        //支付价格
+  }
+}

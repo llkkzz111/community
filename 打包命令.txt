@@ -1,0 +1,38 @@
+react-native bundle --platform android --dev false --entry-file index.android.js  --bundle-output android/app/src/main/assets/index.android.bundle  --assets-dest android/app/src/main/res/
+adb reverse tcp:8081 tcp:8081
+
+Error:Execution failed for task ':app:prepareOcjStoreDataAnalyticsReleaseLibrary'.
+> Unable to unzip 'F:\Space_RN\RnApp_5_31\RN_App\android\app\libs\OcjStoreDataAnalytics-release.aar' to 'C:\Users\xck\.android\build-cache\a305404f1a8e043f553d2b282f8fc6b7eb2671f8\output'
+
+'https://m1.ocj.com.cn:443'
+
+13322211111
+aaa222
+
+ShareCodeActivity//分享
+SignActivity//签到
+http://rm.ocj.com.cn/oclub/tryout
+
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIhdmlzaXRvciEtMmQ2ZWVjNzYtMDQxOS00ZmViLWI3M2EtMWJjMTk3ZmQ4OGU4IiwiaXNzIjoib2NqLXN0YXJza3kiLCJleHAiOjE1MDA2MjQ0MDUsImlhdCI6MTQ5ODAzMjQwNX0.s9MJJeoijTUiYjcf9WxZsg2BfGDX7ulSovEuqhzJukA
+
+
+
+C:/Users/Administrator/AppData/Roaming/npm/React-native bundle --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.jsbundle --platform android --assets-dest android/app/src/main/res/ --dev false
+
+
+
+
+
+预约订单
+item_code:item_code,
+unit_code:item_units,
+qty:"1",
+shop_no:"",
+memberPromo:"",
+gift_item_code:gift_item_code,
+gift_unit_code:gift_unit_code,
+giftPromo_no:giftPromoNo,
+giftPromo_seq:"",
+
+https://chrome.google.com/webstore/detail/adb/dpngiggdglpdnjdoaefidgiigpemgage

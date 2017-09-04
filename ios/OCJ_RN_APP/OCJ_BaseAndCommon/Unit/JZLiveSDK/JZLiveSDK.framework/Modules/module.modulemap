@@ -1,0 +1,6 @@
+framework module JZLiveSDK {
+  umbrella header "JZLiveSDK.h"
+
+  export *
+  module * { export * }
+}

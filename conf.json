@@ -1,0 +1,22 @@
+{
+    "plugins": ["plugins/markdown"],
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true
+    },
+    "source": {
+        "include": ["./app", "./foundation"],
+        "exclude": ["./node_modules"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "templates": {
+        "name": "Doc Template",
+        "footerText": "OCJ 2017"
+    },
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template",
+        "encoding": "utf8",
+        "recurse": true
+    }
+}

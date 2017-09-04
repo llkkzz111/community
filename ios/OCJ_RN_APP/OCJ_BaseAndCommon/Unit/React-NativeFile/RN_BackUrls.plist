@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>http://rm.ocj.com.cn/</string>
+	<string>http://m.ocj.com.cn/</string>
+	<string>http://rm.ocj.com.cn</string>
+	<string>http://m.ocj.com.cn</string>
+	<string>http://rm.ocj.com.cn/?substation_code</string>
+	<string>http://m.ocj.com.cn/?substation_code</string>
+	<string>http://rm.ocj.com.cn/</string>
+	<string>http://m.ocj.com.cn/</string>
+	<string>https://rm.ocj.com.hk/</string>
+	<string>https://m.ocj.com.hk/</string>
+	<string>http://rm.ocj.com.hk/</string>
+	<string>http://m.ocj.com.hk/</string>
+	<string>http://m.ocj.com.cn/cart.jhtml</string>
+</array>
+</plist>
