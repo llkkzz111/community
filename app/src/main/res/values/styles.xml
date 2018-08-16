@@ -48,7 +48,7 @@
         <item name="android:windowBackground">@drawable/img_loading_bg_</item>
     </style>
 
-    <style name="choudao_checkbox_style">
+    <style name="community_checkbox_style">
         <item name="android:button">@drawable/tags_check_box_bg</item>
     </style>
 

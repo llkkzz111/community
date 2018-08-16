@@ -73,7 +73,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_fifteen_sp" />
 
-            <com.choudao.equity.view.NoInnerPaddingTextView
+            <com.community.equity.view.NoInnerPaddingTextView
                 android:id="@+id/tv_another_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

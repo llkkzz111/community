@@ -26,7 +26,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '25.0.0'
     defaultConfig {
-        applicationId "com.choudao.equity"
+        applicationId "com.community.equity"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 12
@@ -37,9 +37,9 @@ android {
             abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
         }
         manifestPlaceholders = [
-                JPUSH_PKGNAME: "com.choudao.equity",
+                JPUSH_PKGNAME: "com.community.equity",
                 JPUSH_APPKEY : "63164160401a23867868a07e", //JPush上注册的包名对应的appkey.
-                JPUSH_CHANNEL: "choudao", //暂时填写默认值即可.
+                JPUSH_CHANNEL: "community", //暂时填写默认值即可.
         ]
     }
     signingConfigs {
@@ -95,7 +95,7 @@ android {
             buildConfigField 'String', 'SOCKET_IP', devSocketHost
             buildConfigField 'int', 'SOCKET_PORT', "39999"
         }
-        choudao {
+        community {
             buildConfigField 'String', 'BASE_URL', releaseUrl
             buildConfigField 'String', 'BASE_API_URL', releaseApiUrl
             buildConfigField 'String', 'SOCKET_IP', releaseSocketHost

@@ -51,12 +51,12 @@
 -keepclasseswithmembernames class * {
     native <methods>;
 }
--keep public class com.choudao.equity.entity.**{*;}
--keep public class com.choudao.imsdk.db.DBHelper{*;}
--keep public class com.choudao.imsdk.dto.**.**{*;}
--keep public class com.choudao.equity.utils.**{*;}
--keep public class com.choudao.imsdk.db.bean.**{*;}
--keep public class com.choudao.imsdk.http.entity.**{*;}
+-keep public class com.community.equity.entity.**{*;}
+-keep public class com.community.imsdk.db.DBHelper{*;}
+-keep public class com.community.imsdk.dto.**.**{*;}
+-keep public class com.community.equity.utils.**{*;}
+-keep public class com.community.imsdk.db.bean.**{*;}
+-keep public class com.community.imsdk.http.entity.**{*;}
 
 # 保持自定义控件类不被混淆
 -keepclasseswithmembers class * {
@@ -73,13 +73,13 @@
    public void *(android.view.View);
 }
 #-------------------------START: webview------------------------------------
--keepclassmembers class com.choudao.equity.WebViewActivity{
+-keepclassmembers class com.community.equity.WebViewActivity{
     public *;
 }
--keepclassmembers class com.choudao.equity.AnswerAddActivity{
+-keepclassmembers class com.community.equity.AnswerAddActivity{
     public *;
 }
--keepclassmembers class com.choudao.equity.QuestionAddActivity{
+-keepclassmembers class com.community.equity.QuestionAddActivity{
     public *;
 }
 #-------------------------END: webview------------------------------------
@@ -144,7 +144,7 @@
 #--------------- END: wechat ----------
 
 #--------------- BEGIN: umeng ----------
--keep public class [com.choudao.equity].R$*{
+-keep public class [com.community.equity].R$*{
 public static final int *;
 }
 #--------------- END: umeng ----------
@@ -185,7 +185,7 @@ public static final int *;
 
 -dontwarn retrofit2.**
 -keep class retrofit2.** { *; }
--keep class com.choudao.equity.api.MyCallBack {
+-keep class com.community.equity.api.MyCallBack {
     public <fields>;
     public <methods>;
 }

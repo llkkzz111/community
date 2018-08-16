@@ -1,10 +1,10 @@
 qq      #   QQ
 wifi    #   WIFI
-choudao #   choudao
+community #   community
 360     #   360
 xiaomi  #   xiaomi
 huawei  #   huawei
 baidu   #   baidu
-choudao_zixun   #   choudao_zixun
+community_zixun   #   community_zixun
 
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.choudao.imsdk">
+    package="com.community.imsdk">
 
     <application>
 

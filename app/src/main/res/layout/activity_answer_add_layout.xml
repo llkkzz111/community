@@ -5,12 +5,12 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.choudao.equity.view.TopView
+    <com.community.equity.view.TopView
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.choudao.equity.view.CDWebView
+    <com.community.equity.view.CDWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
