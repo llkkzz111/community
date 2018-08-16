@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.choudao.equity.view.bottomsheet.BottomSheetLayout
+<com.community.equity.view.bottomsheet.BottomSheetLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottomsheet"
@@ -164,7 +164,7 @@
                         android:textColor="@color/text_default_color"
                         android:textSize="@dimen/padding_seventeen_dp"/>
 
-                    <com.choudao.equity.view.StretchyTextView
+                    <com.community.equity.view.StretchyTextView
                         android:id="@+id/stv_abstract"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
                         android:textColor="@color/text_default_color"
                         android:textSize="@dimen/text_seventeen_sp"/>
 
-                    <com.choudao.equity.view.MyGridView
+                    <com.community.equity.view.MyGridView
                         android:id="@+id/gv_levels"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -506,4 +506,4 @@
             android:textColor="@color/btn_follow_text_color"/>
     </android.support.design.widget.CoordinatorLayout>
 
-</com.choudao.equity.view.bottomsheet.BottomSheetLayout>
+</com.community.equity.view.bottomsheet.BottomSheetLayout>

@@ -8,7 +8,7 @@
 
     <CheckBox
         android:id="@+id/cb_check_tag"
-        style="@style/choudao_checkbox_style"
+        style="@style/community_checkbox_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_thirteen_dp"

@@ -99,7 +99,7 @@
     <string name="text_privacy_setting">隐私</string>
     <string name="text_clear_img_cache">清除图片缓存</string>
     <string name="text_help_feedback">帮助与反馈</string>
-    <string name="text_about_choudao">关于筹道</string>
+    <string name="text_about_community">关于筹道</string>
     <string name="text_about">关于</string>
     <string name="text_logout">退出登录</string>
     <string name="text_new_message_prompt">新消息提示</string>
@@ -150,8 +150,8 @@
     <string name="text_hint_input_phone">请输入正确的手机号</string>
     <string name="text_verification_no_send_success">验证码发送成功</string>
 
-    <string name="text_version_name_middle">&#160; Choudao&#160; </string>
-    <string name="text_choudao_license_aggrement">筹道软件许可及服务协议</string>
+    <string name="text_version_name_middle">&#160; community&#160; </string>
+    <string name="text_community_license_aggrement">筹道软件许可及服务协议</string>
 
     <string name="text_notify_details_description">关闭后，当收到筹道消息，通知提示将不显示发信人和内容摘要。</string>
     <string name="text_chouxiaodao_greet">Hi，我是筹小道\n

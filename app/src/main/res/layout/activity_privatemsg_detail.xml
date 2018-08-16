@@ -5,7 +5,7 @@
               android:background="@color/bg_context_default"
               android:orientation="vertical">
 
-    <com.choudao.equity.view.TopView
+    <com.community.equity.view.TopView
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

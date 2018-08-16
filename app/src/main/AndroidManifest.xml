@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.choudao.equity">
+          package="com.community.equity">
 
     <permission
-        android:name="com.choudao.equity.permission.JPUSH_MESSAGE"
+        android:name="com.community.equity.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature"/>
     <!-- 允许应用获取网络信息状态，如当前的网络连接是否有效。 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <!-- Required  Jpush官方定义的权限，允许应用接收JPUSH内部代码发送的广播消息。 -->
-    <uses-permission android:name="com.choudao.equity.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="com.community.equity.permission.JPUSH_MESSAGE"/>
     <!-- 允许应用可以接收点亮屏幕或解锁广播。 -->
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
     <!-- 允许应用在手机屏幕关闭后后台进程仍然运行 -->
@@ -217,14 +217,14 @@
             android:windowSoftInputMode="adjustResize">
 
             <intent-filter>
-                <action android:name="com.choudao.equity.action"/>
+                <action android:name="com.community.equity.action"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
 
                 <data
                     android:host="friend"
                     android:path="/verification"
-                    android:scheme="choudao"/>
+                    android:scheme="community"/>
             </intent-filter>
         </activity>
         <activity android:name=".ui.MainActivity">
@@ -302,32 +302,32 @@
             android:name=".InnerLinkActivity"
             android:theme="@style/noAnimationTheme">
             <intent-filter>
-                <action android:name="com.choudao.equity.action"/>
+                <action android:name="com.community.equity.action"/>
                 <category android:name="android.intent.category.DEFAULT"/>
 
 
             </intent-filter>
             <intent-filter>
-                <action android:name="com.choudao.equity.action"/>
+                <action android:name="com.community.equity.action"/>
                 <action android:name="android.intent.action.VIEW"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
                     android:host="question"
-                    android:scheme="choudao"/>
+                    android:scheme="community"/>
                 <data
                     android:host="answer"
-                    android:scheme="choudao"/>
+                    android:scheme="community"/>
                 <data
                     android:host="user"
-                    android:scheme="choudao"/>
+                    android:scheme="community"/>
                 <data
                     android:host="page"
-                    android:scheme="choudao"/>
+                    android:scheme="community"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.choudao.equity.action"/>
+                <action android:name="com.community.equity.action"/>
                 <category android:name="android.intent.category.DEFAULT"/>
 
                 <data android:scheme="http"/>
@@ -359,7 +359,7 @@
             android:name=".broadcast.NotificationClickReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.choudao.equity.MSG_ACTION"/>
+                <action android:name="com.community.equity.MSG_ACTION"/>
             </intent-filter>
         </receiver>
 
@@ -376,7 +376,7 @@
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
                 <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
                 <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="com.choudao.equity"/>
+                <category android:name="com.community.equity"/>
             </intent-filter>
         </receiver>
 
@@ -384,7 +384,7 @@
             android:name="UMENG_CHANNEL"
             android:value="${CHANNEL_NAME}"/>
         <meta-data
-            android:name="com.choudao.equity.utils.CustomCachingGlideModule"
+            android:name="com.community.equity.utils.CustomCachingGlideModule"
             android:value="GlideModule"/>
 
     </application>

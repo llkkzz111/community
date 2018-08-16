@@ -5,7 +5,7 @@
     android:background="@color/mine_line_bg"
     android:orientation="vertical">
 
-    <com.choudao.equity.view.TopView
+    <com.community.equity.view.TopView
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_ten_dp"
             android:gravity="center"
-            android:text="@string/text_choudao_license_aggrement" />
+            android:text="@string/text_community_license_aggrement" />
     </LinearLayout>
 
 

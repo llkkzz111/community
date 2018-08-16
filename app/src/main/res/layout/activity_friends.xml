@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.choudao.equity.view.TopView
+        <com.community.equity.view.TopView
             android:id="@+id/topview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -41,7 +41,7 @@
                 android:textSize="@dimen/text_seventeen_sp"
                 android:visibility="gone"/>
 
-            <com.choudao.equity.view.LetterSideBar
+            <com.community.equity.view.LetterSideBar
                 android:id="@+id/lsb_activity_friends"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"

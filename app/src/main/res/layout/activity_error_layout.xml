@@ -5,10 +5,10 @@
     android:gravity="center_vertical"
     android:orientation="vertical">
 
-    <com.choudao.equity.view.TopView
+    <com.community.equity.view.TopView
         android:id="@+id/topview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.choudao.equity.view.TopView>
+        android:layout_height="wrap_content"></com.community.equity.view.TopView>
 
     <TextView
         android:layout_width="match_parent"

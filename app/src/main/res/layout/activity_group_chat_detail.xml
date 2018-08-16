@@ -10,7 +10,7 @@
 
         android:orientation="vertical">
 
-        <com.choudao.equity.view.TopView
+        <com.community.equity.view.TopView
             android:id="@+id/topview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.choudao.equity.view.MyGridView
+                <com.community.equity.view.MyGridView
                     android:id="@+id/gv_chat_menber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
